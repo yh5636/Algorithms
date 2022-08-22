@@ -1,4 +1,4 @@
-package programmers.Level1;
+package programmers.Level2;
 
 /*
 입출력 예
@@ -26,6 +26,14 @@ public class 타겟넘버_dfs {
 		// depth : 노드 깊이
 		// target : 대상 배열 값으로 더하거나 빼서 만들어야 할 수(타켓넘버)
 		// sum : 이전 노드 까지의 결과 값
+		
+		System.out.println("sum:"+sum);
+		System.out.println("numbers[depth]:"+numbers[depth]);
+		System.out.println("sum + numbers[depth]"+(sum + numbers[depth]));
+		System.out.println("sum - numbers[depth]"+(sum - numbers[depth]));
+		System.out.println("--------------------------------");
+		
+		
 		if (depth == numbers.length) { // 마지막 노드까지 탐색한 경우
 			if (target == sum)
 				answer++;
@@ -33,6 +41,7 @@ public class 타겟넘버_dfs {
 			dfs(numbers, depth + 1, target, sum + numbers[depth]);
 			dfs(numbers, depth + 1, target, sum - numbers[depth]);
 		}
+		
 	}
 
 }
