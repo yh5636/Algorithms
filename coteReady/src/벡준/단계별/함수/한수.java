@@ -12,7 +12,7 @@ public class 한수 {
 
 		int rst = 0;
 		hanSuF(n);
-	}
+	} 
 
 	static void hanSuF(int n) {
 		// 1~99까지는 무조건 등차수열(두개의 수만 주어지니까)
