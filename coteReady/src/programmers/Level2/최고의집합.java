@@ -12,10 +12,12 @@ public class 최고의집합 {
 
 		if (n > s) {
 			/*
-			 * 시간초과 걸려 수정 answer = new int[1]; answer[0] = -1;
+			 * 시간초과 걸림 
+			 * answer = new int[1]; answer[0] = -1;
 			 */
+			
+			//수정
 			return new int[] { -1 };
-//            return  answer;
 		}
 
 		int a = s / n;
@@ -27,6 +29,7 @@ public class 최고의집합 {
 		for (int i = 0; i < b; i++) {
 			answer[i] += 1;
 		}
+		
 		Arrays.sort(answer);
 
 		return answer;
