@@ -1,4 +1,4 @@
-package programmers.Level2;
+package programmers.Level3;
 
 public class 정수삼각형 {
 
@@ -11,6 +11,7 @@ public class 정수삼각형 {
         
         for(int i=1; i<triangle.length; i++){
             dp[i][0] = triangle[i][0] + dp[i-1][0];
+            
             //1층 1개, 2층 2개, 3층 3개, 시작점은 (0,0)
             for(int j=1; j<i+1; j++){
                 dp[i][j] = triangle[i][j] + Math.max(dp[i-1][j-1], dp[i-1][j]);
