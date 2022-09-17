@@ -1,6 +1,5 @@
 package programmers.Level1;
 
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -47,6 +46,7 @@ public class 실패율 {
         int[] answer = new int[entryList.size()];
         
         for(int i=0; i<entryList.size(); i++) {
+        	//key값 뽑기
         	answer[i] = entryList.get(i).getKey();
         }
 //        return answer;
